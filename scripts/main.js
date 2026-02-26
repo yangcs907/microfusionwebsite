@@ -25,3 +25,10 @@ const observer = new IntersectionObserver(
 sections.forEach(section => {
   observer.observe(section);
 });
+
+const toggle = document.getElementById("navToggle");
+const nav = document.getElementById("siteNav");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
