@@ -20,22 +20,37 @@
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
     <div class="container site-header__inner">
-      <a href="./" class="site-header__logo" aria-label="MicroFusion home">
-        <img src="./assets/images/mellogo-original.png" alt="MicroFusion Logo">
-      </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="site-nav__link" href="#services">Services</a>
-        <a class="site-nav__link" href="#digital-twins">Digital Twins/Simulators</a>
-        <a class="site-nav__link" href="#controls">Controls</a>
-        <a class="site-nav__link" href="#contact">Contact</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle">
-      ☰
-    </button>
+        <a href="./" class="site-header__logo" aria-label="MicroFusion home">
+            <img src="./assets/images/mellogo-original.png" alt="MicroFusion Logo">
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a class="site-nav__link" href="#services">Services</a>
+            <a class="site-nav__link" href="#digital-twins">Digital Twins/Simulators</a>
+            <a class="site-nav__link" href="#controls">Controls</a>
+            <a class="site-nav__link" href="#contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="mobileNav"
+            aria-expanded="false">
+            ☰
+        </button>
     </div>
-  </header>
+</header>
+
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+<!-- Drawer -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+    <div class="mobile-nav__header">
+        <span class="mobile-nav__title">Menu</span>
+        <button class="mobile-nav__close" id="navClose" aria-label="Close menu">✕</button>
+    </div>
+    <a class="mobile-nav__link" href="#services">Services</a>
+    <a class="mobile-nav__link" href="#digital-twins">Digital Twins</a>
+    <a class="mobile-nav__link" href="#controls">Controls</a>
+    <a class="mobile-nav__link" href="#contact">Contact</a>
+</nav>
 
   <main>
     <section class="hero section" id="top">
