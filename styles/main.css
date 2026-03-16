@@ -115,6 +115,11 @@ section {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
 }
 
 .feature-card::before {
@@ -127,6 +132,13 @@ section {
     border-radius: 50%;
     background: rgba(var(--brand-light-rgb), 0.15);
     transition: transform 0.3s ease;
+}
+
+.feature-icon {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 10px;
+    /* color: var(--brand-light); */
 }
 
 .digital-twins .feature-card::before {
@@ -150,7 +162,8 @@ section {
 .controls .feature-card {
     border-color: rgba(var(--brand-green-rgb), 0.35);
     background: rgba(var(--brand-green-rgb), 0.08);
-    color: rgba(0, 0, 0, 0.85);
+    /* color: rgba(0, 0, 0, 0.85); */
+    color: var(--brand);
 }
 
 .controls .feature-card:hover {
