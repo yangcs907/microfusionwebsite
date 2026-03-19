@@ -220,6 +220,22 @@ section {
     color: white;
 }
 
+.section-cta {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.controls .btn--primary {
+  border-color: var(--brand-green);
+  color: var(--brand-green);
+}
+
+.controls .btn--primary:hover {
+  background: var(--brand-green);
+  color: white;
+}
+
 /* =========================
    Header + Mobile Drawer Nav
 ========================= */
@@ -441,6 +457,118 @@ section {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+/* =========================
+   Controls page (controls.html)
+========================= */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  border: 1px solid rgba(var(--brand-light-rgb), 0.18);
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -60px;
+  right: -60px;
+  border-radius: 50%;
+  background: rgba(var(--brand-light-rgb), 0.1);
+  z-index: 0;
+}
+
+.controls .project-card::before {
+  background: rgba(var(--brand-green-rgb), 0.12);
+}
+
+.project-card__media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.project-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card__body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px;
+}
+
+.project-card__meta {
+  margin: 0 0 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand-light);
+}
+
+.project-card__title {
+  margin: 0 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  color: var(--brand);
+}
+
+.project-card__text {
+  margin: 0 0 20px;
+  font-size: 0.98rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.project-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.controls .project-card .btn {
+  border-color: var(--brand-green);
+  color: var(--brand-green);
+}
+
+.controls .project-card .btn:hover {
+  background: var(--brand-green);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================
