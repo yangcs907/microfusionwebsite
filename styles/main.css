@@ -463,6 +463,120 @@ section {
 /* =========================
    Projects page 
 ========================= */
+.project-showcase {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.project-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.project-list__item {
+    position: relative;
+    padding: 18px 22px;
+    border-radius: 8px;
+
+    background: rgba(var(--brand-light-rgb), 0.05);
+    border: 1px solid rgba(var(--brand-light-rgb), 0.15);
+
+    overflow: hidden;
+}
+
+.project-list__item::before {
+    content: "";
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    top: -45px;
+    right: -45px;
+
+    border-radius: 50%;
+
+    background: rgba(var(--brand-light-rgb), 0.10);
+}
+
+.project-list__item h3 {
+    margin: 0 0 6px;
+    color: var(--brand);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+.project-list__item p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.project-collage {
+    position: relative;
+    min-height: 600px;
+}
+
+.project-collage img {
+    position: absolute;
+
+    width: 280px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* manually stagger photos */
+
+.project-collage img:nth-child(1) {
+    top: 0;
+    left: 20px;
+}
+
+.project-collage img:nth-child(2) {
+    top: 110px;
+    right: 0;
+}
+
+.project-collage img:nth-child(3) {
+    top: 250px;
+    left: 0;
+}
+
+.project-collage img:nth-child(4) {
+    top: 390px;
+    right: 20px;
+}
+
+@media (max-width: 900px) {
+    .project-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .project-collage {
+        min-height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .project-collage img {
+        position: static;
+        width: 100%;
+        height: 180px;
+    }
+}
 .projects-page {
     padding: 0px;
 }
