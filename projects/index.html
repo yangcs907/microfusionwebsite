@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Microfusion Engineering Laboratories, Inc (MEL) provides engineering services worldwide since 1995." />
+    <title>MicroFusion</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a href="../" class="site-header__logo" aria-label="MicroFusion home">
+                <img src="../assets/images/mellogo-original.png" alt="MicroFusion Logo">
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a class="site-nav__link" href="../#services">Services</a>
+                <a class="site-nav__link" href="../#digital-twins">Digital Twins/Simulators</a>
+                <a class="site-nav__link" href="../#controls">Controls</a>
+                <a class="site-nav__link active" href="#projects">Projects</a>
+                <a class="site-nav__link" href="#contact">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="mobileNav"
+                aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+    <!-- Drawer -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+        <div class="mobile-nav__header">
+            <span class="mobile-nav__title">Menu</span>
+            <button class="mobile-nav__close" id="navClose" aria-label="Close menu">✕</button>
+        </div>
+        <a class="mobile-nav__link" href="../#services">Services</a>
+        <a class="mobile-nav__link" href="../#digital-twins">Digital Twins</a>
+        <a class="mobile-nav__link" href="./">Controls</a>
+        <a class="mobile-nav__link" href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2 class="section-title projects-title">Project Examples</h2>
+            <!-- <p class="section-lead">
+                All areas and levels of control engineering needs are met through MEL's
+                simulation quality assurance. Control projects are executed at the highest possible levels of quality.
+            </p> -->
+        </div>
+
+        <section class="section projects-page" id="projects">
+            <div class="container">
+                <h1 class="projects-section-title">Controls and HMI</h1>
+                <p class="projects-section-lead">
+                    All areas and levels of control engineering needs are met through MEL's simulation quality assurance. 
+                    Control projects are executed at the highest possible levels of quality.
+                </p>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-dominion-power.jpg"
+                                alt="Dominion Power">
+                        </div>
+
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Dominion Power - Chesterfield, Virginia</h3>
+                            <p class="project-card__text">
+                                Provided the design, configuration, & commissioning of the complete control system. 
+                                BET projects.
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-duke-energy.jpg"
+                                alt="Duke Energy">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Duke Energy - North Carolina</h3>
+                            <p class="project-card__text">
+                                Combustion Turbine Combined Cycle Plant. Commissioning of a 630MW 2X1 Combined Cycle Plant 
+                                with GE F7A turbines, Vogt HRSG, and GE Steam Turbine with cooling towers, water treatment plant, 
+                                and fuel gas system
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-steam-power.jpg"
+                                alt="Steam Power">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Steam Power Plant Controls</h3>
+                            <p class="project-card__text">
+                                Configured the combustion controls, drum level controls, boiler master logics, and unit master with 
+                                turbine coordinated control mode, including HMI graphics and logic diagrams. Automation & Optimization with ABB DCS and Schneider Electric/Foxboro DCS.
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-jea-northside.jpg"
+                                alt="JEA Northside Generating Station">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">JEA Northside Generating Station</h3>
+                            <p class="project-card__text">
+                                The systems commissioned include: Burner Management System (BMS), Combustion Controls System (CCS), 
+                                Balance of Plant (BOP), and Alarm Management & Operator Graphics
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-bath-county.jpg"
+                                alt="Bath County Pumped Storage Station">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Bath County Pumped Storage Station</h3>
+                            <p class="project-card__text">
+                                Control System Commissioning and Training Simulator Provided simulator for checkout and training
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-canyon.jpg"
+                                alt="Canyon Power Plant">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Canyon Power Plant - Anaheim, California</h3>
+                            <p class="project-card__text">
+                                Control System Commissioning and Training Simulator Provided simulator for checkout and training
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-holland-energy.jpg"
+                                alt="Holland Energy Park">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Holland Energy Park - Michigan</h3>
+                            <p class="project-card__text">
+                                Natural Gas Power Plant Automation, Optimization & Field Services
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-dominion-biomass.jpg"
+                                alt="Dominion Biomass">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Dominion Biomass Fuel Plants</h3>
+                            <p class="project-card__text">
+                                Conversion of coal fired power stations to 100% renewable biomass fuel
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-tva.jpg"
+                                alt="TVA Ackerman Combined Cycle Plant">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">TVA Ackerman Combined Cycle Plant</h3>
+                            <p class="project-card__text">
+                                Alarm Management project for 705MW combined cycle plant station; reduced the number of alarms by 50%
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-energia-patagonia.jpg"
+                                alt="Energia del Sur S.A Central Termica Patagonia Power Plant - Argentina">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Energia del Sur S.A Central Termica Patagonia Power Plant - Argentina</h3>
+                            <p class="project-card__text">
+                                Automation and optimization control system developed using ABB Infi90 DCS
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-colbun-chile.jpg"
+                                alt="Colbun – Plant Santa Maria, Coronel, Region del Biobio - Chile">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Colbun – Plant Santa Maria, Coronel, Region del Biobio - Chile</h3>
+                            <p class="project-card__text">
+                                System update with Foxboro IA control system
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-camp-lemonnier.jpg"
+                                alt="Camp Lemonnier">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Camp Lemonnier - Djibouti Mobile Utilities Power Plant</h3>
+                            <p class="project-card__text">
+                                Modular Power Plant start-up with Wonderware, ArchestrA, ThinManager, and Schnieder PLCs
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-mel-safety.jpg"
+                                alt="MEL Safety">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">MEL Safety & Smart Systems</h3>
+                            <p class="project-card__text">
+                                An Analysis of a Fossil Unit for Pressure Excursions
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-lee-man.jpg"
+                                alt="Lee Man Paper">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Lee & Man Paper – Chongqing, China</h3>
+                            <p class="project-card__text">
+                                Automation and Optimization service using ABB 800xA DCS
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-westrock-combination.jpg"
+                                alt="WestRock Combination">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">WestRock – Combination Boiler DCS Upgrade</h3>
+                            <p class="project-card__text">
+                                NFPA Compliant BMS, and CCS controls upgrade with 800xA system. Dynamic simulator for control system checkout and training
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-pca.jpg"
+                                alt="PCA">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">PCA – Batch Digester Scheduling and Chip Fill Modification</h3>
+                            <p class="project-card__text">
+                                Simulator for validating Steaming Temperature Tracking and Dynamic Spacing. Simulator for Testing Automation Logics for Cooking Pin Chips in digesters
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-ip-mill.jpg"
+                                alt="IP Mill – Bleach Plant D&E Lines">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">IP Mill – Bleach Plant D&E Lines</h3>
+                            <p class="project-card__text">
+                                DCS Upgrade – D Line (CD)EDED Simulator DCS Upgrade – E Line O (CD)ED Simulator
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-westrock-boiler.jpg"
+                                alt="WestRock - Boiler Tuning and Combustion Optimization">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">WestRock - Boiler Tuning and Combustion Optimization - Panama City, FL and Hopewell, VA</h3>
+                            <p class="project-card__text">
+                                Simulator for Implemented Bleaching ACE System Validation
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-ga-tech.jpg"
+                                alt="GA Tech">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Georgia Tech, Atlanta, GA</h3>
+                            <p class="project-card__text">
+                                Chiller Plant Energy Management System
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-kinder.jpg"
+                                alt="Kinder Morgan">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Kinder Morgan Gulf LNG Energy</h3>
+                            <p class="project-card__text">
+                                Gulf LNG Unloading, Storage and Regasification Facility Startup Validation
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="../assets/images/project-hydro.jpg"
+                                alt="Hydro Power Plant">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">*Optional Text*</p>
+                            <h3 class="project-card__title">Hydro Power Plant</h3>
+                            <p class="project-card__text">
+                                Automation & Optimization with Emerson Ovation DCS
+                            </p>
+                            <a href="" class="btn btn--primary">*View Project (optional button)*</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="projects-section-title">Controls and HMI</h1>
+                <p class="projects-section-lead">
+                    All areas and levels of control engineering needs are met through MEL's simulation quality assurance. 
+                    Control projects are executed at the highest possible levels of quality.
+                </p>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="https://images.unsplash.com/photo-1605146768851-eda79da39897?auto=format&fit=crop&w=1200&q=80"
+                                alt="Industrial plant">
+                        </div>
+
+                        <div class="project-card__body">
+                            <p class="project-card__meta">Project</p>
+                            <h3 class="project-card__title">Title of project</h3>
+                            <p class="project-card__text">
+                                Complete control system design, configuration, and commissioning for a major plant
+                                project.
+                            </p>
+                            <a href="" class="btn btn--primary">View Project</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="https://images.unsplash.com/photo-1605146768851-eda79da39897?auto=format&fit=crop&w=1200&q=80"
+                                alt="Industrial plant">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">Project</p>
+                            <h3 class="project-card__title">Title of project</h3>
+                            <p class="project-card__text">
+                                Commissioning support for a 630 MW combined cycle facility with gas and steam turbine
+                                systems.
+                            </p>
+                            <a href="" class="btn btn--primary">View Project</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="https://images.unsplash.com/photo-1605146768851-eda79da39897?auto=format&fit=crop&w=1200&q=80"
+                                alt="Industrial plant">
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__meta">Project</p>
+                            <h3 class="project-card__title">Project name</h3>
+                            <p class="project-card__text">
+                                Description of project, including scope of work, key challenges, and outcomes. This
+                                project involved control system design, configuration, and commissioning for a major
+                                plant project.
+                            </p>
+                            <a href="" class="btn btn--primary">View Project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-layout">
+                    <div class="contact-panel">
+                        <div class="contact-card">
+                            <div class="contact-label">
+                                <span class="material-symbols-outlined contact-icon">
+                                    location_on
+                                </span>
+                                Address
+                            </div>
+                            <div class="contact-value address">
+                                <a href="https://maps.app.goo.gl/mSvgAo5JVKXqEtjM9" target="_blank"
+                                    rel="noopener noreferrer">
+                                    5655 Peachtree Pkwy, Suite 120<br>
+                                    Norcross, GA 30092 USA
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-label">
+                                <span class="material-symbols-outlined contact-icon">
+                                    phone
+                                </span>
+                                Phone
+                            </div>
+                            <div class="contact-value">
+                                <a href="tel:+17704755770">(770) 475-5770</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-label">
+                                <span class="material-symbols-outlined contact-icon">
+                                    email
+                                </span>
+                                Email
+                            </div>
+                            <div class="contact-value">
+                                <a href="mailto:info@microfusionlab.com">info@microfusionlab.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-label">
+                                <span class="material-symbols-outlined contact-icon">
+                                    support_agent
+                                </span>
+                                Customer Support
+                            </div>
+                            <div class="contact-value">
+                                <a href="mailto:support@microfusionlab.com">support@microfusionlab.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.0489868190098!2d-84.22823152408021!3d33.9655803731898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a0b836dc0383%3A0xdf28c80600c2f435!2sMicrofusion%20Engineering!5e0!3m2!1sen!2sus!4v1772068698917!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>&copy; <span id="year">2026</span> Microfusion Engineering Laboratories</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
