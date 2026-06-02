@@ -525,37 +525,51 @@ section {
 .project-collage img {
     position: absolute;
 
-    width: 280px;
-    height: 180px;
+    width: 300px;
+    height: 190px;
 
     object-fit: cover;
 
     border-radius: 8px;
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
 
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease;
 }
 
-/* manually stagger photos */
+.project-collage img:hover {
+    transform: translateY(-4px);
+}
 
 .project-collage img:nth-child(1) {
     top: 0;
     left: 20px;
+    z-index: 1;
 }
 
 .project-collage img:nth-child(2) {
-    top: 110px;
-    right: 0;
+    top: 80px;
+    left: 220px;
+    z-index: 2;
 }
 
 .project-collage img:nth-child(3) {
-    top: 250px;
+    top: 220px;
     left: 0;
+    z-index: 3;
 }
 
 .project-collage img:nth-child(4) {
-    top: 390px;
-    right: 20px;
+    top: 300px;
+    left: 250px;
+    z-index: 4;
+}
+
+.project-collage img:nth-child(5) {
+    top: 430px;
+    left: 120px;
+    z-index: 5;
 }
 
 @media (max-width: 900px) {
