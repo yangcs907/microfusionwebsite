@@ -87,7 +87,7 @@ section {
     max-width: 1200px;
     font-size: 1.125rem;
     color: var(--text);
-    text-align: center;
+    text-align: start;
 }
 
 .services .section-lead {
