@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
-<body>
+<body class="home-page">
 
     <header class="site-header">
         <div class="container site-header__inner">
@@ -28,10 +28,10 @@
             </a>
             <nav class="site-nav" aria-label="Primary navigation">
                 <a class="site-nav__link" href="#services">Services</a>
-                <a class="site-nav__link" href="#digital-twins">Digital Twins/Simulators</a>
                 <a class="site-nav__link" href="#controls">Controls</a>
+                <a class="site-nav__link" href="#digital-twins">Digital Twins/Simulators</a>
                 <a class="site-nav__link" href="./projects">Projects</a>
-                <a class="site-nav__link" href="#contact">Contact</a>
+                <a class="site-nav__link" href="./contact/">Contact</a>
             </nav>
             <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="mobileNav"
                 aria-expanded="false">
@@ -49,9 +49,9 @@
             <button class="mobile-nav__close" id="navClose" aria-label="Close menu">✕</button>
         </div>
         <a class="mobile-nav__link" href="#services">Services</a>
-        <a class="mobile-nav__link" href="#digital-twins">Digital Twins</a>
         <a class="mobile-nav__link" href="#controls">Controls</a>
-        <a class="mobile-nav__link" href="#contact">Contact</a>
+        <a class="mobile-nav__link" href="#digital-twins">Digital Twins</a>
+        <a class="mobile-nav__link" href="./contact/">Contact</a>
     </nav>
 
     <main>
@@ -68,7 +68,7 @@
                         power generations,
                         utilities, manufacturing and pharmaceuticals.
                     </p>
-                    <a href="#contact" class="btn btn--primary">Get Started</a>
+                    <a href="./contact/" class="btn btn--primary">Contact Us</a>
                 </div>
                 <div class="hero__media">
                     <img src="./assets/images/heroBackground.jpg" alt="Engineering systems" class="hero__image">
@@ -106,7 +106,10 @@
                 </p>
 
                 <div class="section-cta">
-                    <a href="./projects/" class="btn btn--primary">Project Examples</a>
+                    <a href="./projects/" class="btn btn--primary btn-project">
+                        <span class="material-symbols-outlined btn-project__icon" aria-hidden="true">folder_open</span>
+                        Project Examples
+                    </a>
                 </div>
 
                 <div class="feature-grid">
@@ -114,10 +117,8 @@
                         <span class="material-symbols-outlined feature-icon">sync_alt</span>
                         <span class="feature-label">Automation Migration</span>
                         <p>
-                            MEL helps industrial facilities upgrade from legacy automation platforms to modern PLC, DCS,
-                            SCADA, and HMI systems with minimal production disruption.
-                            MEL assesses existing hardware, software, I/O, graphics, control logic, and network
-                            architecture, then plans and executes a phased migration to improve reliability,
+                            MEL helps facilities move from legacy automation platforms to modern PLC, DCS, SCADA, and
+                            HMI systems with minimal disruption. Each phased migration is planned to improve reliability,
                             cybersecurity, maintainability, and long-term support.
                         </p>
                     </div>
@@ -126,11 +127,9 @@
                         <span class="material-symbols-outlined feature-icon">engineering</span>
                         <span class="feature-label">System Design</span>
                         <p>
-                            With a team of control engineers and developers, MEL delivers cost-effective automation
-                            solutions across DCS, PLC, SCADA, and system integration platforms.
-                            MEL combines process control expertise, software development, and field commissioning
-                            experience to design, implement, modernize, and support reliable control systems
-                            that improve plant performance, reduce downtime, and meet operational needs.
+                            MEL combines control engineering, software development, and field commissioning experience
+                            to deliver cost-effective DCS, PLC, SCADA, and system integration solutions. Each system is
+                            designed for reliable performance, reduced downtime, and practical operational needs.
                         </p>
                     </div>
 
@@ -138,11 +137,9 @@
                         <span class="material-symbols-outlined feature-icon">security</span>
                         <span class="feature-label">SIL Systems</span>
                         <p>
-                            MEL designs and implements SIL-rated burner management and safety instrumented systems that
-                            meet NFPA 85 and NFPA 86 requirements.
-                            MEL applies proven safety lifecycle practices to develop reliable interlocks, permissives,
-                            trip logic, flame safeguard systems, and emergency shutdown functions
-                            that protect personnel, equipment, and operations.
+                            MEL designs SIL-rated burner management and safety instrumented systems that meet NFPA 85
+                            and NFPA 86 requirements. Proven safety practices support reliable interlocks, trip logic,
+                            flame safeguards, and emergency shutdown functions.
                         </p>
                     </div>
 
@@ -150,9 +147,9 @@
                         <span class="material-symbols-outlined feature-icon">dashboard</span>
                         <span class="feature-label">HMI Optimization</span>
                         <p>
-                            Complex processes can generate cascading alarms that overwhelm operators and delay response.
-                            MEL develops high-performance graphics that clearly present critical process data and help
-                            operators quickly identify root causes and take corrective action.
+                            MEL develops high-performance HMI graphics that present critical process data clearly.
+                            Organized displays help operators identify root causes, respond faster, and take effective
+                            corrective action.
                         </p>
                     </div>
 
@@ -160,10 +157,9 @@
                         <span class="material-symbols-outlined feature-icon">notifications_active</span>
                         <span class="feature-label">Alarm Management</span>
                         <p>
-                            MEL develops structured alarm strategies that prioritize relevant alerts and support
-                            effective operator response.
-                            Through simulation-based validation, MEL tests and optimizes alarm behavior and control
-                            system response before deployment.
+                            MEL develops structured alarm strategies that prioritize relevant alerts and guide effective
+                            operator response. Simulation-based validation tests and optimizes alarm behavior before
+                            deployment.
                         </p>
                     </div>
 
@@ -171,10 +167,9 @@
                         <span class="material-symbols-outlined feature-icon">rocket_launch</span>
                         <span class="feature-label">Virtual Startup</span>
                         <p>
-                            Commissioning delays and manual control checkouts can slow startup, disrupt operations, and
-                            increase project costs.
-                            MEL’s simulation-based virtual startup enables early testing of control logic, system
-                            behavior, and equipment responses before the plant goes online.
+                            MEL’s simulation-based virtual startup tests control logic, system behavior, and equipment
+                            responses before a plant goes online. Early validation reduces commissioning risk, delays,
+                            and costly operational disruption.
                         </p>
                     </div>
 
@@ -182,11 +177,9 @@
                         <span class="material-symbols-outlined feature-icon">construction</span>
                         <span class="feature-label">Commissioning</span>
                         <p>
-                            By validating controls prior to commissioning, MEL helps reduce startup risk, prevent costly
-                            equipment damage, and ensure critical systems are ready for safe, reliable operation.
-                            MEL also supports new applications, re-commissioning, and return-to-service projects,
-                            helping facilities meet critical system needs with greater confidence and minimized
-                            downtime.
+                            MEL validates controls before commissioning to reduce startup risk and help prevent equipment
+                            damage. Support for new applications, re-commissioning, and return-to-service projects helps
+                            facilities resume safe, reliable operation with less downtime.
                         </p>
                     </div>
 
@@ -194,10 +187,9 @@
                         <span class="material-symbols-outlined feature-icon">lan</span>
                         <span class="feature-label">System Integration</span>
                         <p>
-                            MEL integrates controllers, DCS platforms, PLCs, SCADA systems, HMIs, sensors,
-                            instrumentation, and plant-floor data systems into cohesive automation solutions.
-                            These integrations help facilities monitor, control, and improve production processes across
-                            complex industrial environments.
+                            MEL unites DCS platforms, PLCs, SCADA systems, HMIs, sensors, instrumentation, and plant-floor
+                            data in cohesive automation solutions. These integrations improve process visibility,
+                            control, and production performance.
                         </p>
                     </div>
 
@@ -205,10 +197,9 @@
                         <span class="material-symbols-outlined feature-icon">verified</span>
                         <span class="feature-label">Simulation Validation</span>
                         <p>
-                            MEL assures the quality of control development through THiNK dynamic simulation training and
-                            checkout.
-                            This approach helps identify configuration errors, logic gaps, tuning issues, and operator
-                            interface problems early, reducing commissioning time and improving startup reliability.
+                            THiNK dynamic simulation validates control development before startup. It identifies
+                            configuration errors, logic gaps, tuning issues, and interface problems early, reducing
+                            commissioning time and improving startup reliability.
                         </p>
                     </div>
                 </div>
@@ -228,6 +219,13 @@
                     normal operations, disturbances, equipment failures, and abnormal conditions
                     without risking plant assets or personnel.
                 </p>
+
+                <div class="section-cta">
+                    <a href="./projects/" class="btn btn--primary btn-project">
+                        <span class="material-symbols-outlined btn-project__icon" aria-hidden="true">folder_open</span>
+                        Project Examples
+                    </a>
+                </div>
 
                 <div class="feature-grid">
                     <div class="feature-card">
@@ -443,9 +441,14 @@
             </div>
         </div>
     </section> -->
-        <section class="section contact" id="contact">
+        <section class="section contact home-contact" id="contact">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
+                <div class="contact-heading">
+                    <div>
+                        <span class="section-kicker">Get in touch</span>
+                        <h2 class="section-title">Contact</h2>
+                    </div>
+                </div>
                 <div class="contact-layout">
                     <div class="contact-panel">
                         <div class="contact-card">

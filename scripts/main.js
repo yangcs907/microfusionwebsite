@@ -7,6 +7,12 @@ const observer = new IntersectionObserver(
       if (!entry.isIntersecting) return;
 
       const id = entry.target.getAttribute("id");
+      const matchingLink = Array.from(navLinks).find(
+        (link) => link.getAttribute("href") === `#${id}`
+      );
+
+      if (!matchingLink) return;
+
       navLinks.forEach((link) => {
         link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
       });
@@ -65,4 +71,9 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && mobileNav && !mobileNav.hidden) {
     closeNav();
   }
+});
+
+const currentYear = new Date().getFullYear();
+document.querySelectorAll("#year, #currentYear").forEach((year) => {
+  year.textContent = currentYear;
 });
