@@ -723,8 +723,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   grid-template-columns: 0.8fr 1.2fr;
   align-items: end;
   gap: 70px;
-  margin-bottom: 66px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .projects-intro p {
@@ -1650,6 +1649,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 /* Three-column project references */
 .projects-reference-showcase {
   padding: clamp(64px, 8vw, 0px) 0 clamp(80px, 10vw, 124px);
+  padding: 50px 0px;
   background: linear-gradient(180deg, #fff 0%, #f7faf8 100%);
 }
 
@@ -1658,7 +1658,9 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 }
 
 .projects-reference-title {
-  margin-bottom: clamp(48px, 6vw, 76px);
+  /* margin-bottom: clamp(48px, 6vw, 76px); */
+  margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 .project-reference-grid {
@@ -1678,9 +1680,10 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   overflow: hidden;
   aspect-ratio: 4 / 3;
   margin: 0;
-  border-radius: 8px 24px 8px 24px;
+  /* border-radius: 8px 24px 8px 24px; */
+  border-radius: 24px;
   background: #dce8e1;
-  box-shadow: 0 18px 38px -16px rgba(var(--brand-rgb), 0.3);
+  box-shadow: 0 18px 38px 12px rgba(var(--brand-rgb), 0.3);
 }
 
 .project-reference-card__media img {
@@ -1690,9 +1693,9 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   transition: transform 320ms ease;
 }
 
-.project-reference-card:hover .project-reference-card__media img {
+/* .project-reference-card:hover .project-reference-card__media img {
   transform: scale(1.025);
-}
+} */
 
 .project-reference-card__content {
   padding: 24px 4px 0;
@@ -1732,7 +1735,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin: 11px 0 17px;
+  margin: 5px 0 10px;
   color: #477e5e;
   font-size: 0.92rem;
   font-weight: 600;
