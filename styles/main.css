@@ -387,8 +387,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 /* Homepage-compatible foundations */
 .hero__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-columns: 0.7fr 1fr;
+  grid-template-columns: 0.9fr 1fr;
   align-items: center;
   gap: 70px;
 }
@@ -594,7 +593,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   text-align: left;
   color: var(--brand);
   font-weight: bold;
-  margin: -5px 0px;
+  margin: -10px 0px;
 }
 
 .services-list span {
@@ -1649,7 +1648,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 /* Three-column project references */
 .projects-reference-showcase {
   padding: clamp(64px, 8vw, 0px) 0 clamp(80px, 10vw, 124px);
-  padding: 50px 0px;
+  padding: 0px;
   background: linear-gradient(180deg, #fff 0%, #f7faf8 100%);
 }
 
@@ -1659,7 +1658,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 
 .projects-reference-title {
   /* margin-bottom: clamp(48px, 6vw, 76px); */
-  margin-bottom: 50px;
+  margin: 50px 0px;
   font-size: 2rem;
 }
 
@@ -1753,8 +1752,8 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 
 .project-reference-card__system {
   display: inline-block;
-  margin: 20px 0 0;
-  padding: 7px 12px;
+  margin: 10px 0 0;
+  padding: 7px 7px;
   border-radius: 999px;
   color: var(--brand);
   background: rgba(var(--brand-green-rgb), 0.11);
