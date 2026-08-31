@@ -1667,12 +1667,27 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: clamp(26px, 3.5vw, 46px);
+  width: 95%;
+  justify-self: center;
 }
 
 .project-reference-card {
+  width: min(100%, 320px);
   min-width: 0;
   border: 0;
   background: transparent;
+}
+
+.project-reference-card:nth-child(3n + 1) {
+  justify-self: start;
+}
+
+.project-reference-card:nth-child(3n + 2) {
+  justify-self: center;
+}
+
+.project-reference-card:nth-child(3n) {
+  justify-self: end;
 }
 
 .project-reference-card__media {
@@ -1688,7 +1703,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 .project-reference-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   transition: transform 320ms ease;
 }
 
@@ -1764,6 +1779,14 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   .project-reference-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .project-reference-card:nth-child(odd) {
+    justify-self: start;
+  }
+
+  .project-reference-card:nth-child(even) {
+    justify-self: end;
+  }
 }
 
 @media (max-width: 620px) {
@@ -1778,6 +1801,12 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   .project-reference-grid {
     grid-template-columns: 1fr;
     gap: 46px;
+  }
+
+  .project-reference-card,
+  .project-reference-card:nth-child(n) {
+    justify-self: center;
+    width: min(100%, 420px);
   }
 
   .project-reference-card__content {
