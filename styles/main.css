@@ -524,6 +524,43 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   text-align: center;
 }
 
+.project-experience-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 5px;
+  border-radius: 20px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color:#477e5e; */
+  /* background: var(--brand); 
+  color: #fff; */
+  background: none;
+  color: #477e5e;
+  font-size: 1.1em;
+  font-weight: bold;
+  /* line-height: 1.35; */
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* .project-experience-link span {
+  font-size: 1.15em;
+  line-height: 1;
+  transition: transform 180ms ease;
+} */
+
+.project-experience-link:hover,
+.project-experience-link:focus-visible {
+  color: #fff;
+  background: var(--brand);
+  box-shadow: 0 10px 24px -10px rgba(var(--brand-rgb), 0.7);
+}
+
+/* .project-experience-link:hover span,
+.project-experience-link:focus-visible span {
+  transform: translateX(3px);
+} */
+
 /* Homepage rhythm and section alignment */
 .hero.section,
 .services.section
