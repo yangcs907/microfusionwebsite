@@ -44,6 +44,7 @@ body {
   line-height: 1.65;
 }
 
+
 main {
   flex: 1;
   width: 100%;
@@ -702,7 +703,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   overflow: hidden;
   padding-top: 110px;
   /* padding-top: 110px; */
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .projects-showcase::before {
