@@ -92,17 +92,18 @@ textarea {
   font-weight: 500;
   line-height: 1.1;
   color: var(--brand);
+  text-align: center;
 }
 
 .section-title--graphic {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
-  gap: clamp(18px, 3vw, 38px);
-  width: 100%;
+  /* gap: clamp(18px, 3vw, 38px); */
+  width: 85%;
+  margin-inline: auto;
   color: #5f8fcf;
-  font-size: clamp(2.25rem, 2.4vw, 3rem);
-  /* font-size: 2rem; */
+  font-size: 2rem;
 }
 
 .section-title__half {
@@ -1737,8 +1738,7 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
 
 .projects-reference-title {
   /* margin-bottom: clamp(48px, 6vw, 76px); */
-  margin: 50px 0px;
-  font-size: 2rem;
+  margin: 50px auto;
 }
 
 .project-reference-grid {
@@ -1773,7 +1773,8 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   overflow: hidden;
   aspect-ratio: 4 / 3;
   margin: 0;
-  /* border-radius: 8px 24px 8px 24px; */
+  width: 85%;
+  /* margin-inline: auto; */
   border-radius: 24px;
   background: #dce8e1;
   box-shadow: 0 16px 34px -16px rgba(var(--brand-rgb), 0.35);
