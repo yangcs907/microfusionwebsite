@@ -1802,7 +1802,13 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   .project-reference-card,
   .project-reference-card:nth-child(n) {
     justify-self: center;
-    width: min(100%, 360px);
+    /* width: min(100%, 360px); */
+    width: 100%;
+    max-width: none;
+  }
+
+  .project-reference-card__media {
+    width: 100%;
   }
 
   .project-reference-card__content {
@@ -1958,7 +1964,8 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   }
 
   .projects-showcase {
-    padding-top: 48px;
+    padding-top: 24px;
+    padding-bottom: 0px;
   }
 
   .projects-intro {
@@ -1977,12 +1984,17 @@ body:has(.mobile-nav.is-open) .nav-backdrop {
   }
 
   .projects-reference-showcase {
-    padding-block: 36px 60px;
+    /* padding-block: 36px 60px; */
+    padding-top: 10px;
   }
 
   .projects-reference-title {
     width: 100%;
     margin: 0 auto 36px;
+  }
+
+  #think-project-list-title {
+    padding-top: 40px;
   }
 
   .project-reference-grid {
